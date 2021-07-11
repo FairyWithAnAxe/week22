@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: flex;
+        }
+
+        #date {
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        .userInfo {
+            display: flex;
+            flex-direction: column;
+            margin: 100px;
+            padding: 50px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* #canvas-complex {
+            width: 50vw;
+            height: 100vh;
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        } */
+
+        .chart {
+            width: 400px;
+            height: 400px;
+        }
+
+        /* .bloc-logo {
+            position: relative;
+            width: 130px;
+            height: 49px;
+            float: left;
+        } */
+
+        .bloc-logo,
+        .bloc-logo .logo-mask {
+            display: block;
+            /* width: 130px;
+            height: 49px; */
+        }
+
+        .bloc-logo .logo-mask {
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            /* background-size: 130px; */
+            /* background-image: url("../img/logo-mask.png"); */
+            text-indent: -9999px;
+            font-weight: 700;
+            font-size: 28px;
+            flood-color: blueviolet;
+        }
+
+        #logo-canvas {
+            width: 400px;
+            height: 400px;
+        }
+
+        .bloc-logo {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div id="date">
+            </div>
+            <div class="img">
+                <img src="https://magazine.skyeng.ru/wp-content/uploads/2019/03/shutterstock_745196731.jpg" alt="">
+            </div>
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <div class="right">
+            <div class="userInfo">
+                <div class="bloc-logo">
+                    <canvas id="logo-canvas"></canvas>
+                    <a class="logo-mask">Hello, user!</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
